@@ -1,19 +1,14 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet} from "react-router-dom";
+import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 export default function Layout() {
   return (
     <>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-
-      </ul>
-    </nav>
-
+    <Nav/>
     <Outlet />
+    <Footer/>
   </>
   )
 }
